@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
 
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
@@ -29,7 +29,7 @@
       <p class="autenticacao__subtitulo">Crie sua conta para salvar preferências e relatórios.</p>
 
 
-      <form id="formularioCadastro" action="home.html" method="get" style="margin-top: 24px; display:grid; gap: 16px;">
+      <form id="formularioCadastro" action="home.html" method="POST" style="margin-top: 24px; display:grid; gap: 16px;">
         <div class="campo">
           <label for="nome">Nome</label>
           <input class="entrada" id="nome" name="nome" type="text" autocomplete="name" required />
@@ -45,7 +45,7 @@
           <input class="entrada" id="senha" name="senha" type="password" autocomplete="new-password" required
             aria-describedby="dica-senha" />
           <div id="dica-senha" class="ajuda">
-            Dica: use no mínimo 8 caracteres (placeholder).
+            Dica: use no mínimo 8 caracteres.
           </div>
         </div>
 
@@ -56,7 +56,7 @@
 
         <label class="linha">
           <input id="termos" type="checkbox" required />
-          <span>Aceito os termos e a política de privacidade (placeholder).</span>
+          <span>Aceito os termos e a política de privacidade.</span>
         </label>
 
         <button class="botao botao--primario" type="submit">Criar conta</button>
@@ -96,7 +96,6 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
     </button>
   </div>
 
@@ -106,12 +105,16 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
   <script src="acessibilidade/acessibilidade.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

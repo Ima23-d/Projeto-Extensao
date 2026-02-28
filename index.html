@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <!-- <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a> -->
 
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
@@ -28,7 +28,7 @@
       <h1 id="titulo-login" class="autenticacao__titulo">Entrar</h1>
       <p class="autenticacao__subtitulo">Analise seus dados de forma simples e acessível.</p>
 
-      <form action="home.html" method="get" style="margin-top: 24px; display: grid; gap: 16px;">
+      <form action="home.html" method="POST" style="margin-top: 24px; display: grid; gap: 16px;">
         <div class="campo">
           <label for="email">Email</label>
           <input class="entrada" id="email" name="email" type="email" autocomplete="email" required />
@@ -44,7 +44,7 @@
             <input type="checkbox" name="lembrar" />
             Lembrar de mim
           </label>
-          <span aria-live="polite" style="color: var(--muted); font-size: 14px;"> </span>
+
         </div>
 
         <button class="botao botao--primario" type="submit">Entrar</button>
@@ -72,7 +72,6 @@
       <div class="acessibilidade-acoes">
         <button class="botao botao--suave" type="button" id="botaoAumentar">Aumentar fonte</button>
         <button class="botao botao--suave" type="button" id="botaoDiminuir">Diminuir fonte</button>
-        <button class="botao botao--suave" type="button" id="botaoContraste">Alto contraste</button>
         <button class="botao botao--suave" type="button" id="botaoLer">Ler página (voz)</button>
         <button class="botao botao--suave" type="button" id="botaoParar">Parar leitura</button>
       </div>
@@ -85,7 +84,6 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
     </button>
   </div>
 
@@ -96,11 +94,16 @@
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
+
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
   <script src="acessibilidade/acessibilidade.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

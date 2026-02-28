@@ -8,9 +8,7 @@ const alternar = document.getElementById("alternarAcessibilidade");
 alternar.addEventListener("click", () => {
   const aberto = painel.classList.toggle("aberto");
   alternar.setAttribute("aria-expanded", String(aberto));
-  // if (aberto) {
-  //   document.getElementById("botaoAumentar").focus();
-  // }
+
 });
 
 // ============================
@@ -47,7 +45,6 @@ function lerPagina() {
 
   speechSynthesis.cancel();
 
-  // lê só o conteúdo principal (mais útil)
   const conteudo = document.getElementById("conteudo");
   const texto = conteudo ? conteudo.innerText : document.body.innerText;
 
@@ -74,14 +71,3 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// ============================
-// Função auxiliar para mensagens
-// ============================
-
-function mostrarMensagem(texto) {
-  // Função simples para mostrar mensagens
-  console.log(texto);
-
-  // Você pode implementar uma notificação visual aqui se desejar
-  // Por enquanto, apenas exibe no console
-}

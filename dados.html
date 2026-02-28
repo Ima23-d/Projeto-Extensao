@@ -10,8 +10,6 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
-
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
       <a class="marca" href="home.html" aria-label="DataInsight - Início">
@@ -32,7 +30,7 @@
 
       
       <div class="acoes">
-        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações">⚙️</a>
+        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações"><i class="fa-solid fa-gear"></i></a>
       </div>
     </div>
   </header>
@@ -48,7 +46,7 @@
       <section class="grade grade--2" aria-label="Entrada de dados">
         <article class="cartao">
           <h2 class="h2">Inserir dados</h2>
-          <p class="p" style="margin-top:6px;">Cole números separados por vírgula ou quebra de linha (placeholder).</p>
+          <p class="p" style="margin-top:6px;">Cole números separados por vírgula ou quebra de linha.</p>
 
           <div class="campo" style="margin-top:16px;">
             <label for="dados-brutos">Dados</label>
@@ -57,17 +55,14 @@
 
           <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
             <button class="botao botao--primario" type="button">Salvar</button>
-            <button class="botao" type="button">Limpar</button>
+            <button class="botao botao--delet" type="button">Limpar</button>
           </div>
 
-          <p class="p" style="margin-top:12px; font-size:14px;">
-            Acessibilidade: os botões têm foco visível e o campo tem etiqueta associada.
-          </p>
         </article>
 
         <article class="cartao">
           <h2 class="h2">Resumo</h2>
-          <p class="p" style="margin-top:6px;">Exemplo de status do conjunto (placeholder).</p>
+          <p class="p" style="margin-top:6px;">Exemplo de status do conjunto</p>
 
           <div class="grade" style="margin-top:16px;">
             <div class="cartao" style="box-shadow:none;">
@@ -87,7 +82,7 @@
       <section style="margin-top:24px;" aria-label="Tabela de dados">
         <div class="tabela-envoltoria">
           <table>
-            <caption>Tabela de dados (placeholder)</caption>
+            <caption>Tabela de dados</caption>
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -122,8 +117,8 @@
         <div style="display:flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
           <span class="p" style="font-size:14px;">Mostrando 1–3 de 30</span>
           <div style="display:flex; gap: 10px;">
-            <button class="botao" type="button">Anterior</button>
-            <button class="botao" type="button">Próximo</button>
+            <button class="botao botao--select" type="button">Anterior</button>
+            <button class="botao botao--select" type="button">Próximo</button>
           </div>
         </div>
       </section>
@@ -133,7 +128,6 @@
   <footer class="rodape" role="contentinfo">
     <div class="container rodape__interno">
       <span>© DataInsight</span>
-      <span>Use a aba Análises para calcular as métricas automaticamente.</span>
     </div>
   </footer>
 
@@ -157,7 +151,6 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
     </button>
   </div>
 
@@ -167,11 +160,15 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
+
   <script src="acessibilidade/acessibilidade.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

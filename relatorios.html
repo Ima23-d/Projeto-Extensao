@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <!-- <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a> -->
 
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
@@ -31,7 +31,7 @@
       </nav>
       
     <div class="acoes">
-      <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações">⚙️</a>
+        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações"><i class="fa-solid fa-gear"></i></a>
     </div>
     </div>
   </header>
@@ -41,15 +41,15 @@
       <header class="pagina__cabecalho">
         <div class="migalhas">Início &gt; Relatórios</div>
         <h1 class="h1">Relatórios</h1>
-        <p class="p">Gere um resumo para imprimir ou exportar (placeholder).</p>
+        <p class="p">Gere um resumo para imprimir ou exportar.</p>
       </header>
 
       <section class="cartao" aria-label="Ações de relatório">
         <div style="display:flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items:center;">
-          <p class="p">No MVP, você pode usar “Imprimir” e depois evoluir para PDF.</p>
+          <p class="p">Clique Para Gerar Relatório.</p>
           <div style="display:flex; gap: 12px; flex-wrap: wrap;">
             <button class="botao botao--primario" type="button">Gerar PDF</button>
-            <button class="botao" type="button" onclick="window.print()">Imprimir</button>
+            <button class="botao botao-func" type="button" onclick="window.print()">Imprimir</button>
           </div>
         </div>
       </section>
@@ -78,7 +78,6 @@
   <footer class="rodape" role="contentinfo">
     <div class="container rodape__interno">
       <span>© DataInsight</span>
-      <span>Depois você pode gerar PDF com biblioteca JS (ex: jsPDF).</span>
     </div>
   </footer>
 
@@ -102,7 +101,6 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
     </button>
   </div>
 
@@ -112,11 +110,17 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
+
   <script src="acessibilidade/acessibilidade.js"></script>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

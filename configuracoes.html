@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <!-- <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a> -->
 
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
@@ -31,7 +31,7 @@
       </nav>
 
       <div class="acoes">
-        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações">⚙️</a>
+        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações"><i class="fa-solid fa-gear"></i></a>
       </div>
     </div>
   </header>
@@ -47,51 +47,30 @@
       <section class="grade grade--2" aria-label="Preferências">
         <article class="cartao">
           <h2 class="h2">Tema</h2>
-          <p class="p" style="margin-top:6px;">Opções de tema (placeholder, sem JS).</p>
+          <p class="p" style="margin-top:6px;">Controle de Tema.</p>
 
           <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
-            <button class="botao botao--primario" type="button" aria-label="Ativar tema claro (placeholder)">Tema
-              claro</button>
-            <button class="botao" type="button" aria-label="Ativar tema escuro (placeholder)">Tema escuro</button>
+            <button class="botao botao--primario" type="button" aria-label="Ativar tema claro (placeholder)" onclick="alternarTema()">Alterar</button>
           </div>
         </article>
 
         <article class="cartao">
           <h2 class="h2">Leitura</h2>
-          <p class="p" style="margin-top:6px;">Controle de fonte e contraste (placeholder).</p>
+          <p class="p" style="margin-top:6px;">Controle de fonte.</p>
 
           <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
-            <button id="botaoAumentar" class="botao" type="button" aria-label="Aumentar fonte (placeholder)">A+</button>
-            <button id="botaoDiminuir" class="botao" type="button" aria-label="Diminuir fonte (placeholder)">A-</button>
+            <button id="botaoAumentar" class="botao botao-func" type="button" aria-label="Aumentar fonte (placeholder)">A+</button>
+            <button id="botaoDiminuir" class="botao botao-func" type="button" aria-label="Diminuir fonte (placeholder)">A-</button>
           </div>
         </article>
-
-<!-- 
-        <article class="cartao">
-          <h2 class="h2">Leitura por voz</h2>
-          <p class="p" style="margin-top:6px;">Recurso de voz (placeholder, futuro JS).</p>
-
-          <div style="display:flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
-            <button class="botao botao--primario" type="button"
-              aria-label="Iniciar leitura por voz (placeholder)">Iniciar</button>
-            <button class="botao" type="button" aria-label="Parar leitura por voz (placeholder)">Parar</button>
-          </div>
-        </article> -->
       </section>
 
-      <section class="cartao" aria-label="Salvar" style="margin-top:24px;">
-        <div style="display:flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items:center;">
-          <p class="p">Depois a gente salva isso no localStorage com JS.</p>
-          <button class="botao botao--primario" type="button">Salvar alterações</button>
-        </div>
-      </section>
     </div>
   </main>
 
   <footer class="rodape" role="contentinfo">
     <div class="container rodape__interno">
       <span>© DataInsight</span>
-      <span>Configurações focadas em acessibilidade (AA).</span>
     </div>
   </footer>
 
@@ -115,7 +94,6 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
     </button>
   </div>
 
@@ -125,12 +103,16 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
 
   <script src="acessibilidade/acessibilidade.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

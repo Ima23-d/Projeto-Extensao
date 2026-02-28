@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <!-- <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a> -->
 
   <header class="barra-topo" role="banner">
     <div class="container barra-topo__interno">
@@ -31,7 +31,7 @@
       </nav>
 
       <div class="acoes">
-        <a class="botao botao--suave" href="configuracoes.html" aria-label="Abrir configurações">⚙️</a>
+        <a class="botao" href="configuracoes.html" aria-label="Abrir configurações"><i class="fa-solid fa-gear"></i></a>
       </div>
     </div>
   </header>
@@ -41,7 +41,7 @@
       <header class="pagina__cabecalho">
         <div class="migalhas">Início &gt; Análises</div>
         <h1 class="h1">Análises estatísticas</h1>
-        <p class="p">Medidas de tendência central e dispersão (placeholder).</p>
+        <p class="p">Medidas de tendência central e dispersão.</p>
       </header>
 
       <section class="cartao" aria-label="Ações">
@@ -49,7 +49,7 @@
           <p class="p">Clique em “Recalcular” para atualizar com os dados atuais (quando tiver JS).</p>
           <div style="display:flex; gap: 12px; flex-wrap: wrap;">
             <button class="botao botao--primario" type="button">Recalcular</button>
-            <button class="botao" type="button">Exportar resumo</button>
+            <button class="botao botao-func" type="button">Exportar resumo</button>
           </div>
         </div>
       </section>
@@ -94,7 +94,6 @@
   <footer class="rodape" role="contentinfo">
     <div class="container rodape__interno">
       <span>© DataInsight</span>
-      <span>Texto didático e acessível como padrão do projeto.</span>
     </div>
   </footer>
 
@@ -118,7 +117,7 @@
     <button id="alternarAcessibilidade" class="acessibilidade-alternar" type="button" aria-expanded="false"
       aria-controls="painelAcessibilidade">
       ♿
-      <span class="somente-leitura">Abrir menu de acessibilidade</span>
+  
     </button>
   </div>
 
@@ -133,6 +132,8 @@
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
+  <script src="acessibilidade/acessibilidade.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
