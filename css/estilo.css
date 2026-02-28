@@ -1,5 +1,5 @@
 /* ============================
-   DataInsight - Sistema Completo Simplificado
+   DataInsight css
    ============================ */
 
 /* Fonte */
@@ -39,11 +39,11 @@
    DARK MODE
    ============================ */
 .tema-escuro {
-  --fundo: #111827;
+  --fundo: #000000;
   --texto: #F9FAFB;
   --suave: #CBD5E1;
   --borda: #334155;
-  --cartao: #1F2937;
+  --cartao: #1d1d1d;
   --primaria: #3B82F6;
 }
 
